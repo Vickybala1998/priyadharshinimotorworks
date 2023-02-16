@@ -1,0 +1,383 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+h1{
+    color: white;
+    font-family:consolas; 
+    font-stretch: expanded;
+    opacity: 1;
+}
+nav{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    top:0;
+    background-image: url("./img/mechanic.png");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:overlay; 
+    height: 100vh;
+}
+.afterscroll
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    background-color: black;
+    box-shadow: 0 2px 200px -2px white;
+    padding-bottom: 20px;
+    top:0;
+}
+menuItem{
+    color: black
+}
+#navbar
+{
+    display:block;
+}
+nav ul{
+    display:block;
+    list-style:none ;
+}
+nav li{
+    float: left;
+    padding-top: 25px;
+}
+nav li a{
+    text-decoration: none;
+    margin:25px 25px;
+    color:white;
+    font-size:20px;
+    font-weight: 600;
+    position: relative;
+    text-align: right;  
+}
+
+
+ul li a::after {
+    /* position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: black;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right; */
+  }
+
+  ul li a:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2vh;
+    top: 100%;
+    left: 0;
+    background: black;
+    transition: transform 0.5s;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+#banner
+{
+    width: 100%;
+    height: 70vh;
+    background-image: url("./img/hyundai.jpg");
+    background-repeat:no-repeat;
+    background-position: top 60% right 0;
+    background-size: cover;
+    direction:flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    box-shadow: 0px 14px 18px black;
+    display: flex;
+    
+}
+.banner-text
+{
+    background-color: rgba(0,0,0,.05);
+    width:45vh;
+    height: 100%;
+    padding-top: 15vh;
+    padding-left: 2vh;
+}
+button{
+    background: none;
+    border: none;
+    color:white;
+    font-size: 30;
+    text-decoration:underline;
+    margin-top: 30px;
+    font-size: large;
+    font-weight: 800;
+}
+#main-page
+{
+    position: relative;
+}
+#services
+{
+    height: 100vh;
+    /* background-color: rgb(214, 208, 208,0.2);
+    box-shadow: 0 14px 18px black;
+    background-image: url(./img/mechanic.png);
+    background-color: rgb(0, 0, 0,0.70);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:overlay;  */
+}
+#service-header
+{
+    color: black;
+    font-family: "times new roman";
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
+#row
+{
+    margin: 5% 0 0 10%;
+}
+#column
+{
+    float:left;
+    width:20vw;
+    padding:0 10px;  
+}
+#card{
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+    background-color: rgb(240, 236, 236);
+    border-radius: 10px;
+    height: 300px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+#service-img
+{
+    height: 40%;
+    width: 60%;
+    border-radius: 50%;
+    margin-top:-50px;
+    border-color: black;
+    /* border-width: 2px; */
+    border-style: solid;
+    border-bottom: 2px;
+    border-left: 2px;
+    border-right:2px;
+}
+#about
+{
+    height: 100vh;
+    background-color: rgb(173, 174, 177);
+     
+}
+#about-img
+{
+    border-radius:50px;
+    width:200px;
+    height:200px;
+    position: relative;
+}
+#about-text
+{
+    text-align: center;
+    font-family: "sans serif";
+    font-size: 20px;
+    color: black;
+    padding-right: 2vw;
+}
+#mission-row
+{
+    margin: 5vh 0 0 20vw;
+}
+#mission-column
+{
+    float:left;
+    width:30vw;
+    padding:0 10px;  
+}
+#mission-card{
+    text-align: center;
+}
+#mission-text
+{
+    color: black;
+}
+#about-row
+{
+    background-color: black;
+    padding:0 10px; 
+}
+#about-column
+{
+    float: left;   
+}
+#about-card
+{
+   width:100vw;
+   height:auto;
+   text-align: center;
+}
+#about-img-column{
+    border-right: 2px solid black;
+    width: 50vw;
+}
+footer
+{
+    background-color: black;
+    height: 70vh;
+    position: relative;
+}
+
+#map
+{
+    height: 40vh;
+    width:40vw;
+    top:20%;
+    right:5%;
+    position: absolute;
+}
+#address
+{
+    color:white;
+    right:50vw;
+    top:20%;
+    position: absolute;
+}
+#add-heading
+{
+    text-decoration:underline;
+    font-size: 2vh;
+}
+#add-detail
+{
+    font-size: 2vh;
+}
+
+@media (max-width:750px)
+{
+    nav li a{
+        font-size:5vw; 
+    }
+    #logo
+    {
+        width: 20vw;
+    }
+    nav{
+        height: 50vh;
+    }
+    
+    /* nav ul{
+      position:fixed;
+      top:0px;
+      left:-150%;
+      background-color:grey;
+      display: block;
+      width:35%;
+      text-align: center;
+      height: 100vh;
+      box-shadow:0px 20px 25px grey ;
+      
+    }
+    #close
+   {
+    display:block;
+    font-size: 25px;
+    margin-left: 35%;
+    margin-top:40px;
+    color:white;
+    width:100%;
+   }
+    #bar{
+        margin-left:2%;
+        display: block;
+    }
+    .active
+    {
+        left:0;
+        transition: 1s ease-in-out;
+    }
+    .inactive
+    {
+        left:-150%;
+        transition: 1s ease-in-out;
+    }
+    .activeclose
+    {
+        margin-left: 4%;
+        display: block;
+    }
+    #logo
+{
+    margin-left: 0;
+    width: 30vh;
+    height: 80px;
+}
+    nav li{
+        margin-top: 80px;
+        margin-bottom: 1vh;
+    }
+    nav li a {
+        color:white;
+        margin-bottom:20px;
+    } */   
+}
+
+.active
+{
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: yellow;
+}
+
+#bar
+{
+    display:none;
+}
+#close
+{
+    display:none;
+}
+#logo
+{
+    margin-left: 0;
+    width: 80px;
+    height: 80px;
+}
+
+#div1
+{
+    background-color: black;
+    height: 100px;
+    position: relative;
+}
+#div2
+{
+    background-color: blue;
+    height: 100px;
+    position: relative;
+}
+#div3
+{
+    background-color: red;
+    height: 100px;
+    position: fixed;
+}
